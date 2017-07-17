@@ -1,8 +1,8 @@
 class BinarySearchTree {
-  constructor() {
+  constructor () {
     this.root = null
   }
-  contains(value) {
+  contains (value) {
     let found = false
     let current = this.root
 
@@ -21,7 +21,7 @@ class BinarySearchTree {
 
     return found
   }
-  add(value) {
+  add (value) {
     const node = {
       value,
       left: null,
@@ -57,7 +57,7 @@ class BinarySearchTree {
       }
     }
   }
-  remove(value) {
+  remove (value) {
     let found = false
     let parent = null
     let current = this.root
